@@ -160,7 +160,7 @@ jQuery.sAutocomplete = function(inputObj,options) {
                 {
                     var prevItem = $("#sAutocomplete_"+objId+_currentOption);
 
-                    if (_currentOption >= 1) {
+                    if (_currentOption > 1) {
                         _currentOption--;
                     }
                     else {
@@ -332,7 +332,7 @@ jQuery.sAutocomplete = function(inputObj,options) {
 
                 jQuery.each(data, function(index,value)
                 {
-                    var Title = value.Title;
+                    var Title = value.title;
                     var Title_bold = Title.replace($obj.val(), '<b>'+$obj.val()+'</b>');
 
                     var $aHref = jQuery('<a href="javascript:void(0);" id="sAutocomplete_'+objId+value.i+'">' + Title_bold + '</a>');
@@ -361,8 +361,8 @@ jQuery.sAutocomplete = function(inputObj,options) {
 
 		setItem : function(value)
 		{
-			jQuery("#"+objId).val(value.Title);
-			jQuery("#"+objId).attr('data-autocomplete-chosen-id', value.Id);
+			jQuery("#"+objId).val(value.title);
+			jQuery("#"+objId).attr('data-autocomplete-chosen-id', value.id);
 			jQuery("#"+objId+"_autocomplete").hide();
 			
 		    if (opt.afterCompleteClick != null && typeof opt.afterCompleteClick == "function")

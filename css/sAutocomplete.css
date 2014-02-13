@@ -6,7 +6,7 @@ div.sAutocomplete_wrapper {
 div.sAutocomplete_wrap {
 	position: relative;
 	height: auto;
-	text-align: right;
+	text-align: left;
 	z-index: 99999;
 }
 div.sAutocomplete {
