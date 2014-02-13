@@ -18,6 +18,11 @@ local.properties
 .idea
 .idea/
 
+.gitignore
+.project
+.buildpath
+.settings
+
 # External tool builders
 .externalToolBuilders/
 
